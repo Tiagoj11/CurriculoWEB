@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    
+    <!-- DEFININDO STILO DA PAGINA -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <!-- CABEÇALHO PARA NAVEGAÇÃO ENTRE AS PÁGINAS -->
+        <div id="header">   
+            <div id="menu">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre Mim</a>
+                <a href="formacao.htm">Minha Formação</a>
+                <a href="portfolio.html">Meus Projetos</a>
+                <a href="contato.html">Contato</a>        
+            </div>
+        </div>
+    </header>    
+
+    <main>
+        <div class="titulo">
+            <h1 id="titulo">Contato</h1>
+            <p class="textoConteudo">
+                Deixe aqui sua proposta, dúvida ou comentário.
+            </p>
+        </div>
+        
+        <!-- FORM COM TODOS OS CAMPOS OBRIGAÓRIOS -->
+        <div class="form_contato">    
+            <form action="https://formsubmit.co/tiagotrj11@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="nome_formato">
+                    <div class="label_nome">
+                        <label for="label_nome">
+                            <span>Nome</span>
+                            <span class="campo_obrigatorio">*</span>
+                        </label>
+                        <div class="input">
+                            <input id="input" name="nome_input" class="texto_invalido" type="text" required>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="div_formato">
+                    <div class="label_email">
+                        <label for="label_email">
+                            <span>Email</span>
+                            <span class="campo_obrigatorio">*</span>
+                        </label>
+                        <div class="input">
+                            <input id="input" name="email_input" class="texto_invalido" type="email" required>
+                        </div>
+                    </div>    
+                </div>
+                    
+                <div class="mensagem_formato">
+                    <div class="label_mensagem">
+                        <label for="label_mensagem">
+                            <span>Mensagem</span>
+                            <span class="campo_obrigatorio">*</span>
+                        </label>
+                        <div class="input">
+                            <textarea name="mensagem" id="mensagem" required></textarea>
+                        </div>
+                    </div>    
+                </div>
+
+                <button class="botao_enviar" type="submit">Enviar</button>        
+            </form>
+        </div> 
+    </main>
+
+    <footer class="footer">
+        <div class="conteudo-footer">
+            <p>&copy;2025 Tiago Raimundo de Jesus. Todos os direitos reservados.</p>
+        </div>        
+    </footer>
+</body>
+</html>

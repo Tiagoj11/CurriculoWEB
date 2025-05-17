@@ -1,0 +1,241 @@
+/* LIMPAR FORMATAÇÕES */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* FORMATAÇÕES GERAIS */
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    margin: 0;
+    min-height: 100vh; 
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+a{
+    text-decoration: none;;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    text-align: left;
+}
+#menu{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* HEADER */
+header{
+    /* MENU FIXO */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    background-color: aquamarine;
+    padding: 15px;
+    height: 20%;
+}
+#header a:link, #header a:visited{
+    color: rgb(97, 97, 236);
+    padding: 8px 20px;
+}
+#header a:hover{
+    color: white;
+    background: rgb(97, 97, 236);
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer{
+    clear: both;
+    background-color: aquamarine;
+    padding: 15px 0;
+    color:  rgb(97, 97, 236);
+    text-align: center;
+    
+}
+.conteudo-footer{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CONTEÚDO */
+#conteudo{
+    text-align: justify;
+    border: 0cap;
+    width: 46%;
+    color: #0e7eae;
+    margin: 0 auto;
+}
+.intro{
+    padding: 10px;
+    margin-bottom: 30px;
+    background: white;
+    text-align: justify;    
+}
+.intro2{
+    float: right;
+    padding: 100px;
+    margin-bottom: 30px;
+    background: white;
+    text-align: justify;    
+}
+.textoConteudo{
+    color: #0e7eae;
+}
+
+.titulo{
+    text-align: center; 
+    color: #0e7eae;
+    margin-top: 1%;
+}
+#titulo{
+    text-align: center;    
+    color: #0e7eae;
+}
+
+/* IMAGENS */
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+} 
+#redes{
+    display: grid;
+    grid-template-columns: 7% 7%;     
+    gap: 0%;
+    justify-content: center;
+}
+.rede{
+    display: block;
+    margin: 0 auto;
+    max-width: 55%;
+    border-radius: 50%;
+}
+.rede:hover{
+    box-shadow: 0 0 8px #0e7eae;
+}
+#fotoPerfil{
+    width: 50%;
+    height: 25%;
+    border: none;
+}
+
+/* CONTATO */
+.contato{
+    color: #0e7eae;
+}
+.input :focus{
+    outline: none;
+    box-shadow: 0 0 8px #0e7eae;
+}
+#input{
+    margin: 8px 0px 0px;
+    padding: 2px 5px;
+    border-radius: 100px;
+    border: 1px solid #0e7eae;
+    margin-bottom: 16px;
+    height: 40px;
+    width: 200%;
+}
+.form_contato{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 80%;
+}
+#mensagem{
+    margin: 8px 0px 0px;
+    padding: 2px 5px;
+    border-radius: 15px;
+    border: 1px solid #0e7eae;
+    margin-bottom: 16px;
+    height: 120px;
+    width: 200%;    
+}
+
+/* PROJETO */
+.projeto{
+    background-color: aquamarine;
+    border: 1px solid #0e7eae;
+    border-radius: 10px;
+    height: 190%;
+    width: 250%;
+    text-align: center;
+}
+.projeto:hover{
+    box-shadow: 0 0 8px #0e7eae;
+}    
+#projetos{
+    color: #0e7eae;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px 100px;     
+    grid-template-rows: 100px 100px;
+    gap: 45%;
+    justify-content: left;
+}
+.CabProjeto{
+    background-color: aquamarine;
+    border: 1px solid #0e7eae;  
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* BOTÕES */
+.botao_enviar{
+    width: 300px;
+    height: 50px;
+    background-color: #0e7eae;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.Repositorio{
+    width: 150px;
+    height: 40px;
+    background-color: #0e7eae;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.botaoProjeto{
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 10px; 
+    grid-template-rows: 50px;
+}
+.botaoProjeto:active, .botao_enviar:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    background-color: #333;
+}
+.botaoProjeto:hover, .botao_enviar:hover{
+    transform: translateY(3px);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+
+    <!-- DEFININDO STILO DA PAGINA -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <!-- CABEÇALHO PARA NAVEGAÇÃO ENTRE AS PÁGINAS -->
+        <div id="header">          
+            <div id="menu">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre Mim</a>
+                <a href="formacao.htm">Minha Formação</a>
+                <a href="portfolio.html">Meu Portifólio</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="conteudo">
+            <div class="intro">
+                <h1 id="titulo">Meu Protifólio</h1>
+                <br><br>
+                <p class="textoConteudo">
+                    Trago aqui alguns de meus projetos realizados em desenvolvimento backend em diferentes linguagens de programação.
+                </p>
+                <br><br>
+                <!-- PROJETOS -->
+                <div id="projetos">
+                    <div class="projeto">
+                        <div class="CabProjeto">
+                            <h2>Projeto Biblioteca (Python)</h2>
+                        </div>
+                        <br><br>
+                        <p>A ideia deste projeto foi criar um sistema para cadastrar, excluir, alterar e listar livros por nome de autor editora e ano de lançamento.</p>
+                        <br>
+                    </div>
+                    
+                    <div class="projeto">
+                        <div class="CabProjeto">
+                            <h2>Projeto Cofrinho (Java)</h2>
+                        </div>
+                        <br><br>
+                        <p>Projeto criado para simular aplicações em cofrinho bancário incluindo valores em Real, Dólar e Euro. É possível fazer a conversão dos valores entre as moedas.</p>
+                        <br>
+                    </div>
+
+                    <!-- BOTÕES COM LINK PARA O PROJETO EM JS-->
+                    <div class="botaoProjeto">                 
+                        <button onclick= "window.open('https://github.com/Tiagoj11/Biblioteca', '_blank')" class="Repositorio">Repositório</button>                           
+                    </div>
+                    <div class="botaoProjeto">
+                        <button onclick= "window.open('https://github.com/Tiagoj11/Cofrinho', '_blank')" class="Repositorio">Repositório</button>
+                    </div>
+                </div>             
+            </div>
+        </div>  
+    </main>
+
+    <footer class="footer">
+        <div class="conteudo-footer">
+            <p>&copy;2025 Tiago Raimundo de Jesus. Todos os direitos reservados.</p>
+        </div>        
+    </footer>
+</body>
+</html>
